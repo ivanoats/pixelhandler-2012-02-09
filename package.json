@@ -1,0 +1,16 @@
+{
+  "name": "restapi",
+  "version": "0.0.0",
+  "description": "http://pixelhandler.com/blog/2012/02/09/develop-a-restful-api-using-node-js-with-express-and-mongoose/",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "mongoose": "~3.8.7",
+    "express": "~3.4.8"
+  }
+}
