@@ -48,6 +48,26 @@ app.get('/api/products', function (request, response){
   });
 });
 
+app.post('/api/products', function (request, response){
+  'use strict';
+  var product;
+  console.log('POST: ');
+  console.log(request.body);
+  product = new ProductModel({
+    title: request.body.title,
+    description: request.body.description,
+    style: request.body.style
+  });
+  product.save(function (err) {
+    if (!err) {
+      return console.log('created');
+    } else {
+      return console.log(err);
+    }
+  });
+  return response.send(product);
+});
+
 // Launch createServer
 
 var port = 3000;
